@@ -73,7 +73,7 @@ def _format(style: float, text: str) -> str:
 		Returns:
 			String: The formatted string.
 	"""
-	return f"\033[{str(_get_remainder(style))};{str(int(style))}m {text} \033]0m"
+	return f"\033[{str(_get_remainder(style))};{str(int(style))}m {text}\033[0m"
 
 
 from functools import partial
